@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 
 import django.core.mail.backends.console
+
 from dotenv import load_dotenv
 
 
@@ -144,3 +145,8 @@ EMAIL_PORT = os.environ.get('EMAIL_PORT')
 # EMAIL_USE_SSL = os.getenv('EMAIL_USE_SSL')
 EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS')
 SERVER_EMAIL = EMAIL_HOST_USER
+
+AUTH_USER_MODEL = 'auth.User'
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'

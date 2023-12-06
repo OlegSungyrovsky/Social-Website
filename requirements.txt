@@ -2,6 +2,7 @@ Django==4.2.6
 psycopg2-binary==2.9.9
 python-dotenv==1.0.0
 social-auth-app-django==5.4.0
+requests==2.28.1
 
 # for Https protocol(only for dev)
 django-extensions==3.2.4.dev0
